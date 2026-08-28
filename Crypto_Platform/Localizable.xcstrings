@@ -1,0 +1,3678 @@
+{
+  "sourceLanguage": "ru",
+  "strings": {
+    "0": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0"
+          }
+        }
+      }
+    },
+    "64 символа": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "64 characters"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "64 символа"
+          }
+        }
+      }
+    },
+    "Email": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Email"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Email"
+          }
+        }
+      }
+    },
+    "English": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English"
+          }
+        }
+      }
+    },
+    "ID": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ID"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ID"
+          }
+        }
+      }
+    },
+    "KYC": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "KYC"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "KYC"
+          }
+        }
+      }
+    },
+    "Push-уведомление": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Push notification"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Push-уведомление"
+          }
+        }
+      }
+    },
+    "QR недоступен": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "QR unavailable"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "QR недоступен"
+          }
+        }
+      }
+    },
+    "%@ · %@": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ · %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ · %@"
+          }
+        }
+      }
+    },
+    "%@ шт.": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ pcs"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ шт."
+          }
+        }
+      }
+    },
+    "%lld из 255": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld of 255"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld из 255"
+          }
+        }
+      }
+    },
+    "Авторизация": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Авторизация"
+          }
+        }
+      }
+    },
+    "Адрес": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Address"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Адрес"
+          }
+        }
+      }
+    },
+    "Адрес кошелька для приёма": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wallet address to receive to"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Адрес кошелька для приёма"
+          }
+        }
+      }
+    },
+    "Аккаунт": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Account"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Аккаунт"
+          }
+        }
+      }
+    },
+    "Актив": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Asset"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Актив"
+          }
+        }
+      }
+    },
+    "Баланс": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Balance"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Баланс"
+          }
+        }
+      }
+    },
+    "Безопасность": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Security"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Безопасность"
+          }
+        }
+      }
+    },
+    "Брокер": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Broker"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Брокер"
+          }
+        }
+      }
+    },
+    "Брокер забронировал бумаги, ожидается оплата": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The broker has reserved the shares, awaiting payment"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Брокер забронировал бумаги, ожидается оплата"
+          }
+        }
+      }
+    },
+    "Брокер отклонил заявку": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The broker declined the order"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Брокер отклонил заявку"
+          }
+        }
+      }
+    },
+    "Брокер проверяет перевод. Статус обновится, когда транзакция подтвердится в сети": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The broker is verifying the transfer. The status will update once the transaction is confirmed on the network"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Брокер проверяет перевод. Статус обновится, когда транзакция подтвердится в сети"
+          }
+        }
+      }
+    },
+    "Брокерская часть API (`/api/broker/*`) ещё не задеплоена на сервере. Экран заработает без изменений в приложении, как только её выкатят.": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The broker part of the API (`/api/broker/*`) isn't deployed on the server yet. This screen will work as-is once it's rolled out."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Брокерская часть API (`/api/broker/*`) ещё не задеплоена на сервере. Экран заработает без изменений в приложении, как только её выкатят."
+          }
+        }
+      }
+    },
+    "Бронирование, отказ, форма на оплату": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reserve, decline, payment form"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Бронирование, отказ, форма на оплату"
+          }
+        }
+      }
+    },
+    "Бумаги зачислены на ваш счёт": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shares have been credited to your account"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Бумаги зачислены на ваш счёт"
+          }
+        }
+      }
+    },
+    "В криптовалюте": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In cryptocurrency"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В криптовалюте"
+          }
+        }
+      }
+    },
+    "В фильтре «%@» пока пусто. Потяните вниз, чтобы обновить.": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The “%@” filter is empty for now. Pull down to refresh."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В фильтре «%@» пока пусто. Потяните вниз, чтобы обновить."
+          }
+        }
+      }
+    },
+    "В этой подборке пусто": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This collection is empty"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В этой подборке пусто"
+          }
+        }
+      }
+    },
+    "Верификация": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verification"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Верификация"
+          }
+        }
+      }
+    },
+    "Верификация пройдена": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verification complete"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Верификация пройдена"
+          }
+        }
+      }
+    },
+    "Вид на жительство": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Residence permit"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вид на жительство"
+          }
+        }
+      }
+    },
+    "Внутренний ID": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "National ID"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Внутренний ID"
+          }
+        }
+      }
+    },
+    "Водительское удостоверение": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Driver's license"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Водительское удостоверение"
+          }
+        }
+      }
+    },
+    "Войдите, чтобы продолжить": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in to continue"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Войдите, чтобы продолжить"
+          }
+        }
+      }
+    },
+    "Войти": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Войти"
+          }
+        }
+      }
+    },
+    "Время заканчивается — после истечения заявка отменится": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time is running out — the order will be cancelled once it expires"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Время заканчивается — после истечения заявка отменится"
+          }
+        }
+      }
+    },
+    "Время на оплату вышло. Бронь снята, бумаги вернулись в пул брокера — оформите заявку заново": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Payment time has expired. The reservation was released and the shares returned to the broker's pool — please place the order again"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Время на оплату вышло. Бронь снята, бумаги вернулись в пул брокера — оформите заявку заново"
+          }
+        }
+      }
+    },
+    "Все": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Все"
+          }
+        }
+      }
+    },
+    "Всего": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Всего"
+          }
+        }
+      }
+    },
+    "Вход / Регистрация": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in / Register"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вход / Регистрация"
+          }
+        }
+      }
+    },
+    "Выберите тикер, чтобы продолжить": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Select a ticker to continue"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выберите тикер, чтобы продолжить"
+          }
+        }
+      }
+    },
+    "Выбрать тикер": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Select a ticker"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выбрать тикер"
+          }
+        }
+      }
+    },
+    "Выйти": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign out"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выйти"
+          }
+        }
+      }
+    },
+    "Главная": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Home"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Главная"
+          }
+        }
+      }
+    },
+    "Готово": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Готово"
+          }
+        }
+      }
+    },
+    "Гражданство": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Citizenship"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Гражданство"
+          }
+        }
+      }
+    },
+    "Дата выдачи": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Date of issue"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дата выдачи"
+          }
+        }
+      }
+    },
+    "Дата регистрации": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registration date"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дата регистрации"
+          }
+        }
+      }
+    },
+    "Действителен до": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valid until"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Действителен до"
+          }
+        }
+      }
+    },
+    "Действительна до": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valid until"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Действительна до"
+          }
+        }
+      }
+    },
+    "Демонстрационный сценарий": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Demo scenario"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Демонстрационный сценарий"
+          }
+        }
+      }
+    },
+    "Документ": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Document"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Документ"
+          }
+        }
+      }
+    },
+    "Доступно": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Available"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доступно"
+          }
+        }
+      }
+    },
+    "Доходность": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P&L"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доходность"
+          }
+        }
+      }
+    },
+    "Забронирована": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reserved"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Забронирована"
+          }
+        }
+      }
+    },
+    "Забронированы": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reserved"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Забронированы"
+          }
+        }
+      }
+    },
+    "Загружаем курс…": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Loading rate…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Загружаем курс…"
+          }
+        }
+      }
+    },
+    "Заказ создан": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order created"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заказ создан"
+          }
+        }
+      }
+    },
+    "Закрыть": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Закрыть"
+          }
+        }
+      }
+    },
+    "Запрос отменён": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Request cancelled"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запрос отменён"
+          }
+        }
+      }
+    },
+    "Зарегистрироваться": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Зарегистрироваться"
+          }
+        }
+      }
+    },
+    "Зарезервировано": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reserved"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Зарезервировано"
+          }
+        }
+      }
+    },
+    "Заявка": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заявка"
+          }
+        }
+      }
+    },
+    "Заявка закрыта — действия недоступны": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This order is closed — no actions available"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заявка закрыта — действия недоступны"
+          }
+        }
+      }
+    },
+    "Заявка на проверке": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Under review"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заявка на проверке"
+          }
+        }
+      }
+    },
+    "Заявка отменена, средства не списаны": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The order was cancelled, no funds were charged"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заявка отменена, средства не списаны"
+          }
+        }
+      }
+    },
+    "Заявка отправлена брокеру и ждёт решения": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The order was sent to the broker and is awaiting a decision"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заявка отправлена брокеру и ждёт решения"
+          }
+        }
+      }
+    },
+    "Заявка уйдёт брокеру на подтверждение. Списание произойдёт только после того, как брокер её забронирует.": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The order will be sent to the broker for confirmation. Funds are charged only after the broker reserves it."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заявка уйдёт брокеру на подтверждение. Списание произойдёт только после того, как брокер её забронирует."
+          }
+        }
+      }
+    },
+    "Заявки брокера": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Broker orders"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заявки брокера"
+          }
+        }
+      }
+    },
+    "Заявки на обработку": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders to process"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заявки на обработку"
+          }
+        }
+      }
+    },
+    "Заявку уже взял другой брокер": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Another broker already took this order"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заявку уже взял другой брокер"
+          }
+        }
+      }
+    },
+    "Заявок нет": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No orders"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заявок нет"
+          }
+        }
+      }
+    },
+    "Здесь появятся исполненные операции": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Executed trades will appear here"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Здесь появятся исполненные операции"
+          }
+        }
+      }
+    },
+    "Здесь появятся купленные бумаги": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Purchased shares will appear here"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Здесь появятся купленные бумаги"
+          }
+        }
+      }
+    },
+    "Имя": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "First name"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Имя"
+          }
+        }
+      }
+    },
+    "Информация": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Information"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Информация"
+          }
+        }
+      }
+    },
+    "Исполненные операции": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Executed trades"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Исполненные операции"
+          }
+        }
+      }
+    },
+    "История": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "History"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "История"
+          }
+        }
+      }
+    },
+    "Истёк таймер": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Timer expired"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Истёк таймер"
+          }
+        }
+      }
+    },
+    "Итого": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Итого"
+          }
+        }
+      }
+    },
+    "К оплате": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Due"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "К оплате"
+          }
+        }
+      }
+    },
+    "К оплате в криптовалюте": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Due in cryptocurrency"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "К оплате в криптовалюте"
+          }
+        }
+      }
+    },
+    "К переводу": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To transfer"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "К переводу"
+          }
+        }
+      }
+    },
+    "Категории пока не приходят с сервера": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Categories aren't provided by the server yet"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Категории пока не приходят с сервера"
+          }
+        }
+      }
+    },
+    "Количество": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quantity"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Количество"
+          }
+        }
+      }
+    },
+    "Комиссия %@": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fee %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Комиссия %@"
+          }
+        }
+      }
+    },
+    "Комиссия предварительная — точную назначает брокер при создании заявки": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The fee is an estimate — the broker sets the exact amount when the order is created"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Комиссия предварительная — точную назначает брокер при создании заявки"
+          }
+        }
+      }
+    },
+    "Кошелёк не установлен": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wallet app not installed"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Кошелёк не установлен"
+          }
+        }
+      }
+    },
+    "Купить": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buy"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Купить"
+          }
+        }
+      }
+    },
+    "Курс недоступен": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rate unavailable"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Курс недоступен"
+          }
+        }
+      }
+    },
+    "Курс устарел — обновите его перед отправкой": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The rate is outdated — refresh it before sending"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Курс устарел — обновите его перед отправкой"
+          }
+        }
+      }
+    },
+    "Лимитная цена": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Limit price"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Лимитная цена"
+          }
+        }
+      }
+    },
+    "Личные данные": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personal details"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Личные данные"
+          }
+        }
+      }
+    },
+    "Метод %@ ещё не реализован на сервере": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The %@ endpoint isn't implemented on the server yet"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Метод %@ ещё не реализован на сервере"
+          }
+        }
+      }
+    },
+    "Мой аккаунт": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "My account"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Мой аккаунт"
+          }
+        }
+      }
+    },
+    "На проверке": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Under review"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "На проверке"
+          }
+        }
+      }
+    },
+    "Например: нет бумаг в пуле": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For example: no shares left in the pool"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Например: нет бумаг в пуле"
+          }
+        }
+      }
+    },
+    "Настройки": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Настройки"
+          }
+        }
+      }
+    },
+    "Не удалось войти": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't sign in"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось войти"
+          }
+        }
+      }
+    },
+    "Не удалось загрузить": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't load"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось загрузить"
+          }
+        }
+      }
+    },
+    "Не удалось загрузить баланс": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't load balance"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось загрузить баланс"
+          }
+        }
+      }
+    },
+    "Не удалось зарегистрироваться": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't register"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось зарегистрироваться"
+          }
+        }
+      }
+    },
+    "Не удалось получить форму оплаты": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't get the payment form"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось получить форму оплаты"
+          }
+        }
+      }
+    },
+    "Не удалось получить цену %@": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't get the price for %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось получить цену %@"
+          }
+        }
+      }
+    },
+    "Не удалось создать заказ": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't create the order"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось создать заказ"
+          }
+        }
+      }
+    },
+    "Нереализованный PnL": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unrealized P&L"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нереализованный PnL"
+          }
+        }
+      }
+    },
+    "Нет данных за период": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No data for this period"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нет данных за период"
+          }
+        }
+      }
+    },
+    "Нет соединения с интернетом": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No internet connection"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нет соединения с интернетом"
+          }
+        }
+      }
+    },
+    "Ничего не найдено": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nothing found"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ничего не найдено"
+          }
+        }
+      }
+    },
+    "Новая": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Новая"
+          }
+        }
+      }
+    },
+    "Новая заявка": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New order"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Новая заявка"
+          }
+        }
+      }
+    },
+    "Новые": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Новые"
+          }
+        }
+      }
+    },
+    "Номер документа": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Document number"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Номер документа"
+          }
+        }
+      }
+    },
+    "Обновить": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Refresh"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Обновить"
+          }
+        }
+      }
+    },
+    "Обновлён": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Updated"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Обновлён"
+          }
+        }
+      }
+    },
+    "Операция": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Operation"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Операция"
+          }
+        }
+      }
+    },
+    "Оплата": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Payment"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оплата"
+          }
+        }
+      }
+    },
+    "Оплата отправлена": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Payment sent"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оплата отправлена"
+          }
+        }
+      }
+    },
+    "Оплата прошла, сделка исполнена": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Payment went through, the trade is executed"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оплата прошла, сделка исполнена"
+          }
+        }
+      }
+    },
+    "Оплатите в течение": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pay within"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оплатите в течение"
+          }
+        }
+      }
+    },
+    "Оплачена": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paid"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оплачена"
+          }
+        }
+      }
+    },
+    "Оплачены": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paid"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оплачены"
+          }
+        }
+      }
+    },
+    "Ордер № %lld": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order #%lld"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ордер № %lld"
+          }
+        }
+      }
+    },
+    "Ордера": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ордера"
+          }
+        }
+      }
+    },
+    "Ордеров нет": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No orders"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ордеров нет"
+          }
+        }
+      }
+    },
+    "Ориентировочная сумма": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estimated value"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ориентировочная сумма"
+          }
+        }
+      }
+    },
+    "Оставьте пустым — возьмётся основной": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leave empty to use the primary one"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оставьте пустым — возьмётся основной"
+          }
+        }
+      }
+    },
+    "Отклонена": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Declined"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отклонена"
+          }
+        }
+      }
+    },
+    "Отклонены": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Declined"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отклонены"
+          }
+        }
+      }
+    },
+    "Отклонить": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decline"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отклонить"
+          }
+        }
+      }
+    },
+    "Отклонить заявку": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decline the order"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отклонить заявку"
+          }
+        }
+      }
+    },
+    "Открыть в криптокошельке": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open in crypto wallet"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открыть в криптокошельке"
+          }
+        }
+      }
+    },
+    "Отмена": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отмена"
+          }
+        }
+      }
+    },
+    "Отменена": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancelled"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отменена"
+          }
+        }
+      }
+    },
+    "Отменить": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отменить"
+          }
+        }
+      }
+    },
+    "Отменить ордер": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel order"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отменить ордер"
+          }
+        }
+      }
+    },
+    "Отправить на проверку": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Submit for review"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отправить на проверку"
+          }
+        }
+      }
+    },
+    "Оформите заявку, чтобы она появилась здесь": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Place an order for it to appear here"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оформите заявку, чтобы она появилась здесь"
+          }
+        }
+      }
+    },
+    "Оформить заявку": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Place an order"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оформить заявку"
+          }
+        }
+      }
+    },
+    "Оформленные заявки": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Placed orders"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оформленные заявки"
+          }
+        }
+      }
+    },
+    "Ошибка": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ошибка"
+          }
+        }
+      }
+    },
+    "Ошибка сервера (%lld)": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Server error (%lld)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ошибка сервера (%lld)"
+          }
+        }
+      }
+    },
+    "Пароли не совпадают": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords don't match"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пароли не совпадают"
+          }
+        }
+      }
+    },
+    "Пароль": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Password"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пароль"
+          }
+        }
+      }
+    },
+    "Паспорт": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passport"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Паспорт"
+          }
+        }
+      }
+    },
+    "Переводите строго в сети %@. Перевод в другой сети приведёт к потере средств.": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send strictly over the %@ network. Sending over a different network will result in loss of funds."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Переводите строго в сети %@. Перевод в другой сети приведёт к потере средств."
+          }
+        }
+      }
+    },
+    "Перейти к оплате": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Go to payment"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перейти к оплате"
+          }
+        }
+      }
+    },
+    "Период": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Period"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Период"
+          }
+        }
+      }
+    },
+    "Платёжная часть API не реализована, форма собрана локально. Адрес ничей: приватного ключа к нему не существует, реальный перевод будет потерян безвозвратно.": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The payment API isn't implemented — this form was built locally. The address belongs to no one: there's no private key for it, and a real transfer would be lost permanently."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Платёжная часть API не реализована, форма собрана локально. Адрес ничей: приватного ключа к нему не существует, реальный перевод будет потерян безвозвратно."
+          }
+        }
+      }
+    },
+    "Повторите пароль": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Repeat password"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Повторите пароль"
+          }
+        }
+      }
+    },
+    "Повторить": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retry"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Повторить"
+          }
+        }
+      }
+    },
+    "Подтверждение": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confirmation"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подтверждение"
+          }
+        }
+      }
+    },
+    "Позиции": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Positions"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Позиции"
+          }
+        }
+      }
+    },
+    "Позиций нет": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No positions"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Позиций нет"
+          }
+        }
+      }
+    },
+    "Показано %lld из %lld": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Showing %lld of %lld"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показано %lld из %lld"
+          }
+        }
+      }
+    },
+    "Попробуйте другой тикер или название": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try a different ticker or name"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Попробуйте другой тикер или название"
+          }
+        }
+      }
+    },
+    "После перевода вставьте хеш — брокер сверит платёж": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After sending, paste the hash — the broker will verify the payment"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "После перевода вставьте хеш — брокер сверит платёж"
+          }
+        }
+      }
+    },
+    "Предложения": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offers"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Предложения"
+          }
+        }
+      }
+    },
+    "Причина отказа": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reason for declining"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Причина отказа"
+          }
+        }
+      }
+    },
+    "Проверяем статус… (запрос %lld)": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Checking status… (request %lld)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверяем статус… (запрос %lld)"
+          }
+        }
+      }
+    },
+    "Продать": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sell"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Продать"
+          }
+        }
+      }
+    },
+    "Продолжить": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Продолжить"
+          }
+        }
+      }
+    },
+    "Пройден": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verified"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пройден"
+          }
+        }
+      }
+    },
+    "Пройти KYC": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Complete KYC"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пройти KYC"
+          }
+        }
+      }
+    },
+    "Профиль": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Profile"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Профиль"
+          }
+        }
+      }
+    },
+    "Раздел недоступен": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Section unavailable"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Раздел недоступен"
+          }
+        }
+      }
+    },
+    "Распределение": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Breakdown"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Распределение"
+          }
+        }
+      }
+    },
+    "Роль": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Role"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Роль"
+          }
+        }
+      }
+    },
+    "Русский": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Russian"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Русский"
+          }
+        }
+      }
+    },
+    "Рынки": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Markets"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Рынки"
+          }
+        }
+      }
+    },
+    "Светлая": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Light"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Светлая"
+          }
+        }
+      }
+    },
+    "Сделки": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trades"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сделки"
+          }
+        }
+      }
+    },
+    "Сделок пока нет": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No trades yet"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сделок пока нет"
+          }
+        }
+      }
+    },
+    "Сервер вернул неожиданный ответ": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The server returned an unexpected response"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сервер вернул неожиданный ответ"
+          }
+        }
+      }
+    },
+    "Сервер не ответил вовремя": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The server didn't respond in time"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сервер не ответил вовремя"
+          }
+        }
+      }
+    },
+    "Сессия истекла, войдите заново": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your session expired, please sign in again"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сессия истекла, войдите заново"
+          }
+        }
+      }
+    },
+    "Системная": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Системная"
+          }
+        }
+      }
+    },
+    "Системный": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Системный"
+          }
+        }
+      }
+    },
+    "Скопировать адрес": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy address"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скопировать адрес"
+          }
+        }
+      }
+    },
+    "Скопируйте адрес и сумму — или установите приложение, поддерживающее %@": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy the address and amount — or install an app that supports %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скопируйте адрес и сумму — или установите приложение, поддерживающее %@"
+          }
+        }
+      }
+    },
+    "Собрана локально — платёжного эндпоинта на сервере пока нет": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Built locally — there's no payment endpoint on the server yet"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Собрана локально — платёжного эндпоинта на сервере пока нет"
+          }
+        }
+      }
+    },
+    "Создан": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Created"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Создан"
+          }
+        }
+      }
+    },
+    "Создана": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Created"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Создана"
+          }
+        }
+      }
+    },
+    "Статусы меняются локально, сервер в этом не участвует.": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statuses change locally — the server isn't involved."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Статусы меняются локально, сервер в этом не участвует."
+          }
+        }
+      }
+    },
+    "Страна проживания": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Country of residence"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Страна проживания"
+          }
+        }
+      }
+    },
+    "Сумма": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Amount"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сумма"
+          }
+        }
+      }
+    },
+    "Сформировать": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Generate"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сформировать"
+          }
+        }
+      }
+    },
+    "Сформировать форму на оплату": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Generate a payment form"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сформировать форму на оплату"
+          }
+        }
+      }
+    },
+    "Тема приложения": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App theme"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тема приложения"
+          }
+        }
+      }
+    },
+    "Тест": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Test"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тест"
+          }
+        }
+      }
+    },
+    "Тестовый режим — не переводите сюда деньги": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Test mode — don't send real funds here"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тестовый режим — не переводите сюда деньги"
+          }
+        }
+      }
+    },
+    "Тип": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тип"
+          }
+        }
+      }
+    },
+    "Тёмная": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dark"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тёмная"
+          }
+        }
+      }
+    },
+    "Успешно выполнена": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completed successfully"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Успешно выполнена"
+          }
+        }
+      }
+    },
+    "Фамилия": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last name"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фамилия"
+          }
+        }
+      }
+    },
+    "Форма на оплату": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Payment form"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Форма на оплату"
+          }
+        }
+      }
+    },
+    "Форма на оплату создана": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Payment form created"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Форма на оплату создана"
+          }
+        }
+      }
+    },
+    "Формат верный": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Format is valid"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Формат верный"
+          }
+        }
+      }
+    },
+    "Хеш транзакции": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transaction hash"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Хеш транзакции"
+          }
+        }
+      }
+    },
+    "Цена": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Price"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цена"
+          }
+        }
+      }
+    },
+    "Цена исполнения": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Execution price"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цена исполнения"
+          }
+        }
+      }
+    },
+    "Язык приложения": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App language"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Язык приложения"
+          }
+        }
+      }
+    },
+    "сеть %@": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ network"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "сеть %@"
+          }
+        }
+      }
+    },
+    "шт.": {
+      "extractionState": "manual",
+      "shouldGenerateSymbol": false,
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "pcs"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "шт."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.1"
+}
