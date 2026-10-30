@@ -6,11 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		47A9B164F3818F78C8DC567E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = B21C0537C3F67361971B32CF /* FirebaseMessaging */; };
+		E64D0631D0096DCD85F64444 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 005E822887B57B8ECE71DE6E /* FirebaseCrashlytics */; };
+		FC762D3FA1ED5DB188FAA84F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = BE1599F3C30047A059CF9816 /* FirebaseAnalytics */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52039E9341DCA100DCC9242D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9364157B2ECCBFF700093700 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 936415822ECCBFF700093700;
+			remoteInfo = Crypto_Platform;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		936415832ECCBFF700093700 /* Crypto_Platform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypto_Platform.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9AE91EEA2806D7B7A96E1F8 /* Crypto_PlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Crypto_PlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		863DD641A5034FBB9F1AEF9E /* Crypto_PlatformTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Crypto_PlatformTests;
+			sourceTree = "<group>";
+		};
 		936415852ECCBFF700093700 /* Crypto_Platform */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Crypto_Platform;
@@ -23,6 +45,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47A9B164F3818F78C8DC567E /* FirebaseMessaging in Frameworks */,
+				E64D0631D0096DCD85F64444 /* FirebaseCrashlytics in Frameworks */,
+				FC762D3FA1ED5DB188FAA84F /* FirebaseAnalytics in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDFFAF7E8AD40AC038143A89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +64,7 @@
 		9364157A2ECCBFF700093700 = {
 			isa = PBXGroup;
 			children = (
+				863DD641A5034FBB9F1AEF9E /* Crypto_PlatformTests */,
 				936415852ECCBFF700093700 /* Crypto_Platform */,
 				936415842ECCBFF700093700 /* Products */,
 			);
@@ -40,6 +73,7 @@
 		936415842ECCBFF700093700 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				B9AE91EEA2806D7B7A96E1F8 /* Crypto_PlatformTests.xctest */,
 				936415832ECCBFF700093700 /* Crypto_Platform.app */,
 			);
 			name = Products;
@@ -48,6 +82,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6D30BC93C20FCF446037127D /* Crypto_PlatformTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A60DC9419DDD6CFD1D4FFE6 /* Build configuration list for PBXNativeTarget "Crypto_PlatformTests" */;
+			buildPhases = (
+				EAEBA874AE3EB75DEF14687D /* Sources */,
+				CDFFAF7E8AD40AC038143A89 /* Frameworks */,
+				7B1023C970D1BC0D3321DDF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4361440966A141F24E34B31F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				863DD641A5034FBB9F1AEF9E /* Crypto_PlatformTests */,
+			);
+			name = Crypto_PlatformTests;
+			packageProductDependencies = (
+			);
+			productName = Crypto_PlatformTests;
+			productReference = B9AE91EEA2806D7B7A96E1F8 /* Crypto_PlatformTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		936415822ECCBFF700093700 /* Crypto_Platform */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 936415902ECCBFFB00093700 /* Build configuration list for PBXNativeTarget "Crypto_Platform" */;
@@ -55,6 +112,7 @@
 				9364157F2ECCBFF700093700 /* Sources */,
 				936415802ECCBFF700093700 /* Frameworks */,
 				936415812ECCBFF700093700 /* Resources */,
+				367CB34AC7CE14DA7E6E1950 /* Upload dSYM to Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -65,6 +123,9 @@
 			);
 			name = Crypto_Platform;
 			packageProductDependencies = (
+				B21C0537C3F67361971B32CF /* FirebaseMessaging */,
+				005E822887B57B8ECE71DE6E /* FirebaseCrashlytics */,
+				BE1599F3C30047A059CF9816 /* FirebaseAnalytics */,
 			);
 			productName = Crypto_Platform;
 			productReference = 936415832ECCBFF700093700 /* Crypto_Platform.app */;
@@ -81,6 +142,10 @@
 				LastUpgradeCheck = 2620;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
+					6D30BC93C20FCF446037127D = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 936415822ECCBFF700093700;
+					};
 					936415822ECCBFF700093700 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
@@ -96,17 +161,28 @@
 			);
 			mainGroup = 9364157A2ECCBFF700093700;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BA0277A286A18B033776C2F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 936415842ECCBFF700093700 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				936415822ECCBFF700093700 /* Crypto_Platform */,
+				6D30BC93C20FCF446037127D /* Crypto_PlatformTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7B1023C970D1BC0D3321DDF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		936415812ECCBFF700093700 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -116,6 +192,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		367CB34AC7CE14DA7E6E1950 /* Upload dSYM to Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = "Upload dSYM to Crashlytics";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Только Release и только с конфигурацией Firebase\nif [ \"$CONFIGURATION\" != \"Release\" ] || [ ! -f \"$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/GoogleService-Info.plist\" ]; then\n  exit 0\nfi\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9364157F2ECCBFF700093700 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -124,9 +223,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAEBA874AE3EB75DEF14687D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4361440966A141F24E34B31F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 936415822ECCBFF700093700 /* Crypto_Platform */;
+			targetProxy = 52039E9341DCA100DCC9242D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1DCBB5314E75AC663BD9810A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TL3MNCD9ZD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "super-man.Crypto-PlatformTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crypto_Platform.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Crypto_Platform";
+			};
+			name = Release;
+		};
 		9364158E2ECCBFFB00093700 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -180,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -239,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -261,9 +394,9 @@
 				DEVELOPMENT_TEAM = TL3MNCD9ZD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -292,15 +425,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Crypto_Platform.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TL3MNCD9ZD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -324,9 +458,37 @@
 			};
 			name = Release;
 		};
+		C5CEA9FAE06BEBC0EFDECFC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TL3MNCD9ZD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "super-man.Crypto-PlatformTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crypto_Platform.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Crypto_Platform";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4A60DC9419DDD6CFD1D4FFE6 /* Build configuration list for PBXNativeTarget "Crypto_PlatformTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5CEA9FAE06BEBC0EFDECFC6 /* Debug */,
+				1DCBB5314E75AC663BD9810A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9364157E2ECCBFF700093700 /* Build configuration list for PBXProject "Crypto_Platform" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -346,6 +508,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA0277A286A18B033776C2F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		005E822887B57B8ECE71DE6E /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA0277A286A18B033776C2F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		B21C0537C3F67361971B32CF /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA0277A286A18B033776C2F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		BE1599F3C30047A059CF9816 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA0277A286A18B033776C2F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9364157B2ECCBFF700093700 /* Project object */;
 }

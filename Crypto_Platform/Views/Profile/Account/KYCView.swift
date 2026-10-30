@@ -79,14 +79,13 @@ struct KYCView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: Spacing.l) {
 
-                if session.kycCompleted {
-                    NoticeView(kind: .info, title: "Верификация пройдена")
-                } else if session.kycUploaded {
-                    NoticeView(
-                        kind: .warning,
-                        title: "Заявка на проверке",
-                        message: session.kycStatus
-                    )
+                switch session.kycState {
+                case .rejected(let reason):
+                    NoticeView(kind: .error, title: "Анкета отклонена", message: reason)
+                case .reupload(let reason):
+                    NoticeView(kind: .warning, title: "Нужно отправить анкету снова", message: reason)
+                default:
+                    EmptyView()
                 }
 
                 VStack(alignment: .leading, spacing: Spacing.s) {
@@ -167,8 +166,9 @@ struct KYCView: View {
             }
             .padding(Spacing.m)
         }
-        .onChange(of: session.kycCompleted) {
-            if session.kycCompleted { dismiss() }
+        // После отправки сервер переводит анкету на проверку — экран закрываем
+        .onChange(of: session.kycState) { _, state in
+            if state == .pending || state == .approved { dismiss() }
         }
         .onDisappear {
             session.errorMessage = nil
@@ -181,16 +181,16 @@ struct KYCView: View {
         isSubmitting = true
 
         Task {
-            _ = await session.submitKYC(
-                firstName: firstName.trimmed,
-                secondName: secondName.trimmed,
+            _ = await session.submitKYC(KYCRequest(
+                first_name: firstName.trimmed,
+                second_name: secondName.trimmed,
                 citizenship: citizenship.trimmed,
-                countryOfResidence: countryOfResidence.trimmed,
-                documentType: documentType.rawValue,
-                documentNumber: documentNumber.trimmed,
-                dateOfIssue: Self.apiDateFormatter.string(from: dateOfIssue),
-                expirationDate: Self.apiDateFormatter.string(from: expirationDate)
-            )
+                country_of_residence: countryOfResidence.trimmed,
+                document_type: documentType.rawValue,
+                document_number: documentNumber.trimmed,
+                date_of_issue: Self.apiDateFormatter.string(from: dateOfIssue),
+                expiration_date: Self.apiDateFormatter.string(from: expirationDate)
+            ))
 
             isSubmitting = false
         }

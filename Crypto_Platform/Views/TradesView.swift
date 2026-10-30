@@ -27,18 +27,25 @@ struct TradesContentView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: Spacing.l) {
 
-                NavigationLink {
-                    CreateOrderView()
-                } label: {
-                    Text("Оформить заявку")
+                VStack(alignment: .leading, spacing: Spacing.s) {
+                    SectionHeader("Покупка у брокера")
+
+                    DataGroup {
+                        NavigationRow(title: "Новая заявка", subtitle: "Покупка акций с оплатой в HZN") {
+                            NewPurchaseView()
+                        }
+                        HairlineDivider()
+                        NavigationRow(title: "Мои заявки", subtitle: "Активные и завершённые заявки") {
+                            MyPurchasesView()
+                        }
+                    }
                 }
-                .buttonStyle(.primary)
 
                 VStack(alignment: .leading, spacing: Spacing.s) {
                     SectionHeader("История")
 
                     DataGroup {
-                        NavigationRow(title: "Ордера", subtitle: "Оформленные заявки") {
+                        NavigationRow(title: "Ордера", subtitle: "Рыночные ордера") {
                             OrdersView()
                         }
                         HairlineDivider()
@@ -58,6 +65,25 @@ struct TradesContentView: View {
 }
 
 /// Строка-переход: заголовок, пояснение и шеврон
+/// «Загрузить ещё» под постраничным списком
+struct LoadMoreButton: View {
+    let isLoading: Bool
+    let action: () async -> Void
+
+    var body: some View {
+        Button {
+            Task { await action() }
+        } label: {
+            HStack {
+                if isLoading { ProgressView() }
+                Text("Загрузить ещё")
+            }
+        }
+        .buttonStyle(.secondaryOutline)
+        .disabled(isLoading)
+    }
+}
+
 struct NavigationRow<Destination: View>: View {
     let title: LocalizedStringKey
     var subtitle: LocalizedStringKey?

@@ -129,24 +129,43 @@ struct DataRow: View {
     var isMonospaced = false
     var isStrong = false
 
+    @Environment(\.dynamicTypeSize) private var typeSize
+
     var body: some View {
-        HStack(alignment: .firstTextBaseline, spacing: Spacing.m) {
-            Text(label)
-                .font(.subheadline)
-                .foregroundStyle(Palette.secondaryText)
-
-            Spacer(minLength: Spacing.s)
-
-            Text(value)
-                .font(isMonospaced ? .system(.footnote, design: .monospaced) : .subheadline)
-                .fontWeight(isStrong ? .semibold : .regular)
-                .monospacedDigit()
-                .foregroundStyle(valueColor)
-                .multilineTextAlignment(.trailing)
-                .lineLimit(2)
-                .truncationMode(.middle)
+        // На крупных размерах шрифта подпись и значение встают друг под другом
+        Group {
+            if typeSize.isAccessibilitySize {
+                VStack(alignment: .leading, spacing: Spacing.xs) {
+                    labelText
+                    valueText.multilineTextAlignment(.leading)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+            } else {
+                HStack(alignment: .firstTextBaseline, spacing: Spacing.m) {
+                    labelText
+                    Spacer(minLength: Spacing.s)
+                    valueText.multilineTextAlignment(.trailing)
+                }
+            }
         }
         .padding(.vertical, Spacing.s + 2)
+    }
+
+    private var labelText: some View {
+        Text(label)
+            .font(.subheadline)
+            .foregroundStyle(Palette.secondaryText)
+    }
+
+    /// Адреса и хеши (моноширинные) показываются целиком: их сверяют глазами
+    private var valueText: some View {
+        Text(value)
+            .font(isMonospaced ? .system(.footnote, design: .monospaced) : .subheadline)
+            .fontWeight(isStrong ? .semibold : .regular)
+            .monospacedDigit()
+            .foregroundStyle(valueColor)
+            .lineLimit(isMonospaced ? nil : 2)
+            .truncationMode(.middle)
     }
 }
 
@@ -241,14 +260,13 @@ extension ButtonStyle where Self == SecondaryButtonStyle {
 
 struct NoticeView: View {
     enum Kind {
-        case info, warning, error, demo
+        case info, warning, error
 
         var color: Color {
             switch self {
             case .info:    return Palette.secondaryText
             case .warning: return .orange
             case .error:   return Palette.negative
-            case .demo:    return .purple
             }
         }
 
@@ -257,7 +275,6 @@ struct NoticeView: View {
             case .info:    return "info.circle"
             case .warning: return "exclamationmark.triangle"
             case .error:   return "exclamationmark.octagon"
-            case .demo:    return "theatermasks"
             }
         }
     }

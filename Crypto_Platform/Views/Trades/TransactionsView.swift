@@ -31,14 +31,23 @@ struct TransactionsView: View {
                 )
             } else {
                 ScrollView {
-                    DataGroup {
-                        ForEach(Array(session.trades.enumerated()), id: \.element.id) { index, trade in
-                            if index > 0 { HairlineDivider() }
-                            TradeRow(trade: trade)
+                    VStack(spacing: Spacing.m) {
+                        DataGroup {
+                            ForEach(Array(session.trades.enumerated()), id: \.element.id) { index, trade in
+                                if index > 0 { HairlineDivider() }
+                                TradeRow(trade: trade)
+                            }
+                        }
+
+                        if session.canLoadMoreTrades {
+                            LoadMoreButton(isLoading: session.isTradesLoadingMore) {
+                                await session.loadMoreTrades()
+                            }
                         }
                     }
                     .padding(Spacing.m)
                 }
+                .refreshable { await session.fetchTrades() }
             }
         }
         .navigationTitle("Сделки")

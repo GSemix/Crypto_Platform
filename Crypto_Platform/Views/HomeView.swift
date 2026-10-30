@@ -11,6 +11,8 @@ struct HomeView: View {
     @State private var selectedCategory = "Популярное"
     @EnvironmentObject var session: UserSession
     @EnvironmentObject var assetsStore: AssetsStore
+    @EnvironmentObject var notifications: NotificationsStore
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some View {
         ScrollView {
@@ -24,7 +26,7 @@ struct HomeView: View {
                     .buttonStyle(.plain)
                 }
 
-                PromotionsBlock()
+                CatalogOfflineNotice()
 
                 VStack(alignment: .leading, spacing: Spacing.m) {
                     CollectionsTabs(selectedCategory: $selectedCategory)
@@ -34,6 +36,19 @@ struct HomeView: View {
             .padding(Spacing.m)
         }
         .navigationTitle("Главная")
+        .toolbar {
+            if session.isAuthenticated {
+                ToolbarItem(placement: .topBarTrailing) { NotificationsBell() }
+            }
+        }
+        // Счётчик непрочитанных обновляется, пока главная на экране
+        .task(id: session.isAuthenticated && scenePhase == .active) {
+            guard session.isAuthenticated, scenePhase == .active else { return }
+            while !Task.isCancelled {
+                await notifications.refreshUnreadCount()
+                try? await Task.sleep(nanoseconds: 30_000_000_000)
+            }
+        }
     }
 }
 
@@ -69,48 +84,6 @@ struct BalanceBlock: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .card()
     }
-}
-
-// MARK: - Акции
-
-struct PromotionsBlock: View {
-    let promos: [Promo] = [
-        Promo(title: "Скидка 20% на комиссии", subtitle: "До 30 ноября"),
-        Promo(title: "0 ₽ за пополнение", subtitle: "Для новых пользователей"),
-        Promo(title: "Бонус 500 ₽", subtitle: "За приглашённого друга")
-    ]
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: Spacing.s) {
-            SectionHeader("Предложения")
-
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: Spacing.s) {
-                    ForEach(promos) { promo in
-                        VStack(alignment: .leading, spacing: Spacing.xs) {
-                            Text(promo.title)
-                                .font(.subheadline)
-                                .fontWeight(.medium)
-                                .fixedSize(horizontal: false, vertical: true)
-
-                            Text(promo.subtitle)
-                                .font(.caption)
-                                .foregroundStyle(Palette.secondaryText)
-                        }
-                        .frame(width: 190, alignment: .leading)
-                        .card(padding: Spacing.m)
-                    }
-                }
-                .padding(.vertical, 1)
-            }
-        }
-    }
-}
-
-struct Promo: Identifiable {
-    let id = UUID()
-    let title: String
-    let subtitle: String
 }
 
 // MARK: - Категории
@@ -251,7 +224,7 @@ struct AssetDetailScreen: View {
 
                 VStack(spacing: Spacing.s) {
                     NavigationLink {
-                        CreateOrderView(preselected: stock)
+                        NewPurchaseView(symbol: stock.symbol)
                     } label: {
                         Text("Оформить заявку")
                     }

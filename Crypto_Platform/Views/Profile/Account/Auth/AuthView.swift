@@ -45,7 +45,7 @@ struct AuthView: View {
         .navigationTitle("Авторизация")
         .navigationBarTitleDisplayMode(.inline)
         .onChange(of: mode) { _, _ in
-            session.logout()
+            session.errorMessage = nil
         }
     }
 

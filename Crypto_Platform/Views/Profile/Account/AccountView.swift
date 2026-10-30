@@ -9,7 +9,6 @@ import SwiftUI
 
 struct AccountView: View {
     @EnvironmentObject var session: UserSession
-    @EnvironmentObject var api: OrdersAPI
 
     var body: some View {
         ScrollView {
@@ -23,21 +22,6 @@ struct AccountView: View {
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, Spacing.xl)
                 } else {
-                    if session.role.lowercased() == "broker" {
-                        VStack(alignment: .leading, spacing: Spacing.s) {
-                            SectionHeader("Брокер")
-
-                            DataGroup {
-                                NavigationRow(
-                                    title: "Заявки на обработку",
-                                    subtitle: "Бронирование, отказ, форма на оплату"
-                                ) {
-                                    BrokerDashboardView(api: api)
-                                }
-                            }
-                        }
-                    }
-
                     VStack(alignment: .leading, spacing: Spacing.s) {
                         SectionHeader("Информация")
 
@@ -56,14 +40,19 @@ struct AccountView: View {
                         SectionHeader("Верификация")
 
                         DataGroup {
-                            if session.kycCompleted {
-                                DataRow(label: "KYC", value: String(localized: "Пройден"), valueColor: Palette.positive)
-                            } else if session.kycUploaded {
+                            switch session.kycState {
+                            case .approved:
+                                DataRow(label: "KYC", value: String(localized: "Одобрено"), valueColor: Palette.positive)
+                            case .pending:
                                 DataRow(label: "KYC", value: String(localized: "На проверке"))
-                            } else {
-                                NavigationRow(title: "Пройти KYC") {
-                                    KYCView()
-                                }
+                            case .rejected(let reason):
+                                resubmitRows(status: String(localized: "Отклонено"), reason: reason)
+                            case .reupload(let reason):
+                                resubmitRows(status: String(localized: "Нужна повторная отправка"), reason: reason)
+                            case .notSubmitted:
+                                NavigationRow(title: "Пройти KYC") { KYCView() }
+                            case nil:
+                                ProgressView().frame(maxWidth: .infinity).padding(.vertical, Spacing.s)
                             }
                         }
                     }
@@ -76,10 +65,23 @@ struct AccountView: View {
         .task {
             if session.isAuthenticated {
                 await session.fetchUser()
+                await session.fetchKYC()
             }
         }
         .onDisappear {
             session.errorMessage = nil
         }
+    }
+
+    /// После отказа анкету можно отправить снова
+    @ViewBuilder
+    private func resubmitRows(status: String, reason: String?) -> some View {
+        DataRow(label: "KYC", value: status, valueColor: Palette.negative)
+        if let reason, !reason.isEmpty {
+            HairlineDivider()
+            DataRow(label: "Причина", value: reason)
+        }
+        HairlineDivider()
+        NavigationRow(title: "Отправить анкету снова") { KYCView() }
     }
 }

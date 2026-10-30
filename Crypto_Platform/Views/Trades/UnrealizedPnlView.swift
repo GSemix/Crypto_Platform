@@ -93,7 +93,7 @@ struct PnLPositionRow: View {
         .padding(.vertical, Spacing.s + 2)
     }
 
-    private func metric(_ title: String, _ value: Double?, isPrice: Bool = true) -> some View {
+    private func metric(_ title: String, _ value: Decimal?, isPrice: Bool = true) -> some View {
         VStack(alignment: .leading, spacing: 2) {
             Text(title)
                 .font(.caption2)
@@ -105,8 +105,8 @@ struct PnLPositionRow: View {
         }
     }
 
-    private func display(_ value: Double?, isPrice: Bool) -> String {
+    private func display(_ value: Decimal?, isPrice: Bool) -> String {
         guard let value else { return "—" }
-        return isPrice ? formatPrice(value) : String(format: "%.4f", value)
+        return isPrice ? formatPrice(value) : formatQuantity(value)
     }
 }

@@ -42,6 +42,17 @@ struct Asset: Identifiable, Decodable {
         case currency
     }
 
+    init(symbol: String, name: String, currency: String, price: Double = 0, change: Double = 0, hasPrice: Bool = false) {
+        logo = "chart.line.uptrend.xyaxis"
+        self.symbol = symbol
+        self.name = name
+        self.currency = currency
+        type = "Популярное"
+        self.price = price
+        self.change = change
+        self.hasPrice = hasPrice
+    }
+
     init(from decoder: Decoder) throws {
         let c = try decoder.container(keyedBy: CodingKeys.self)
 
@@ -97,11 +108,20 @@ final class AssetsStore: ObservableObject {
     @Published private(set) var assets: [Asset] = []
     @Published var isLoading: Bool = false
     @Published var errorMessage: String?
+    /// Сервер недоступен: показан сохранённый каталог от этого времени
+    @Published private(set) var staleSince: Date?
+
+    private let cache = CatalogCache()
 
     private let baseURL = "https://hse-server.tw1.ru/api"
 
-    func loadAssets() async {
-        guard assets.isEmpty else { return }
+    func loadAssets(force: Bool = false) async {
+        guard assets.isEmpty || force || staleSince != nil else { return }
+        // Каталог не старше 5 минут показывается без загрузки
+        if !force, assets.isEmpty, let saved = cache.read(), Date().timeIntervalSince(saved.savedAt) < CatalogCache.freshFor {
+            assets = saved.assets
+            return
+        }
 
         isLoading = true
         errorMessage = nil
@@ -119,12 +139,24 @@ final class AssetsStore: ObservableObject {
             let status = (response as? HTTPURLResponse)?.statusCode ?? 0
 
             if status == 200 {
-                assets = try JSONDecoder().decode([Asset].self, from: data)
+                let fresh = try JSONDecoder().decode([Asset].self, from: data)
+                // Цены, уже известные по прошлой загрузке, сохраняем
+                let known = Dictionary((cache.read()?.assets ?? assets).map { ($0.symbol, $0) }, uniquingKeysWith: { a, _ in a })
+                assets = fresh.map { asset in
+                    guard let old = known[asset.symbol], old.hasPrice else { return asset }
+                    var merged = asset
+                    merged.price = old.price; merged.change = old.change; merged.hasPrice = true
+                    return merged
+                }
+                staleSince = nil
+                cache.write(assets)
             } else {
                 errorMessage = "Не удалось загрузить активы"
+                useCacheIfAvailable()
             }
         } catch {
             errorMessage = error.localizedDescription
+            useCacheIfAvailable()
         }
 
         isLoading = false
@@ -147,6 +179,15 @@ final class AssetsStore: ObservableObject {
             ? 0
             : (last.price - first.price) / first.price * 100
         assets[index].hasPrice = true
+        cache.write(assets)
+    }
+
+    /// Сервер недоступен: последний сохранённый каталог любой давности с отметкой времени
+    private func useCacheIfAvailable() {
+        guard let saved = cache.read() else { return }
+        if assets.isEmpty { assets = saved.assets }
+        staleSince = saved.savedAt
+        errorMessage = nil
     }
 
     /// GET /api/assets/{symbol}/history — параметры называются from/to (не date_from/date_to)
@@ -183,3 +224,50 @@ final class AssetsStore: ObservableObject {
     }
 }
 
+
+/// Каталог на устройстве (Caches): список активов и последние известные цены
+struct CatalogCache {
+    static let freshFor: TimeInterval = 5 * 60
+
+    struct Item: Codable {
+        let symbol: String, name: String, currency: String
+        let price: Double, change: Double, hasPrice: Bool
+    }
+
+    struct Saved: Codable {
+        let savedAt: Date
+        let items: [Item]
+        var assets: [Asset] {
+            items.map { Asset(symbol: $0.symbol, name: $0.name, currency: $0.currency,
+                              price: $0.price, change: $0.change, hasPrice: $0.hasPrice) }
+        }
+    }
+
+    private let url = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0]
+        .appendingPathComponent("catalog.json")
+
+    func read() -> Saved? {
+        (try? Data(contentsOf: url)).flatMap { try? JSONDecoder().decode(Saved.self, from: $0) }
+    }
+
+    func write(_ assets: [Asset]) {
+        let saved = Saved(savedAt: Date(), items: assets.map {
+            Item(symbol: $0.symbol, name: $0.name, currency: $0.currency, price: $0.price, change: $0.change, hasPrice: $0.hasPrice)
+        })
+        if let data = try? JSONEncoder().encode(saved) { try? data.write(to: url, options: .atomic) }
+    }
+}
+
+/// Плашка «показан сохранённый каталог»
+struct CatalogOfflineNotice: View {
+    @EnvironmentObject var assetsStore: AssetsStore
+
+    var body: some View {
+        if let since = assetsStore.staleSince {
+            NoticeView(kind: .warning,
+                       title: "Нет связи с сервером",
+                       message: String(localized: "Показан каталог, сохранённый \(since.formatted(date: .abbreviated, time: .shortened)). Цены могут быть устаревшими."),
+                       action: ("Повторить", { Task { await assetsStore.loadAssets(force: true) } }))
+        }
+    }
+}

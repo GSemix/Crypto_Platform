@@ -24,12 +24,13 @@ struct OrderPanelView: View {
     @State private var isSubmitting = false
     @State private var errorText: String?
 
-    var quantity: Double {
-        Double(quantityText.replacingOccurrences(of: ",", with: ".")) ?? 0
+    var quantity: Decimal {
+        Decimal(string: quantityText.replacingOccurrences(of: ",", with: "."), locale: Locale(identifier: "en_US_POSIX")) ?? 0
     }
 
+    /// Оценка по последней цене графика; точную цену исполнения назначит сервер
     var estimatedValue: Double {
-        quantity * currentPrice
+        quantity.doubleValue * currentPrice
     }
 
     var body: some View {

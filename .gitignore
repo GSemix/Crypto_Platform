@@ -24,3 +24,6 @@ Carthage/Build/
 
 # Secrets / local config
 *.xcconfig.local
+
+# Firebase — конфигурация проекта, в git не попадает
+GoogleService-Info.plist

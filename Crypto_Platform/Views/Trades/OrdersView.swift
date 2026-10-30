@@ -32,6 +32,7 @@ struct OrdersView: View {
                 )
             } else {
                 ScrollView {
+                    VStack(spacing: Spacing.m) {
                     DataGroup {
                         ForEach(Array(session.orders.enumerated()), id: \.element.id) { index, order in
                             if index > 0 { HairlineDivider() }
@@ -53,8 +54,16 @@ struct OrdersView: View {
                             }
                         }
                     }
+
+                    if session.canLoadMoreOrders {
+                        LoadMoreButton(isLoading: session.isOrdersLoadingMore) {
+                            await session.loadMoreOrders()
+                        }
+                    }
+                    }
                     .padding(Spacing.m)
                 }
+                .refreshable { await session.fetchOrders() }
             }
         }
         .navigationTitle("Ордера")

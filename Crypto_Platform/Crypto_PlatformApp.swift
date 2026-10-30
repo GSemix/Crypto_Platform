@@ -16,65 +16,85 @@ class NavigationState: ObservableObject { // Для состояния скры�
 
 @main
 struct Crypto_PlatformApp: App {
+    @UIApplicationDelegateAdaptor(PlatformAppDelegate.self) private var appDelegate
+    @ObservedObject private var push = PushCenter.shared
     @StateObject var nav = NavigationState()
     @AppStorage("app_language") private var appLanguage = "system"
-    @StateObject private var session = UserSession()
+    @StateObject private var session: UserSession
+    @StateObject private var purchases: PurchaseStore
+    @StateObject private var notifications: NotificationsStore
     @StateObject private var assetsStore = AssetsStore()
     @StateObject private var toastManager = ToastManager()
-    @StateObject private var ordersAPI = OrdersAPI()
     @AppStorage("app_theme") private var appThemeRaw = AppTheme.system.rawValue
-    
+
+    init() {
+        let session = UserSession()
+        _session = StateObject(wrappedValue: session)
+        _purchases = StateObject(wrappedValue: PurchaseStore(api: session.api))
+        _notifications = StateObject(wrappedValue: NotificationsStore(api: session.api))
+        PushCenter.shared.attach(session.api)
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(nav) // доступ во всё приложение
                 .environment(\.locale, localeFromStorage())
                 .environmentObject(session)
+                .environmentObject(purchases)
+                .environmentObject(notifications)
                 .environmentObject(assetsStore)
                 .environmentObject(toastManager)
-                .environmentObject(ordersAPI)
                 .task {
-                    await assetsStore.loadAssets()
-                    
-                    if session.isAuthenticated {
-                        await session.fetchBalance()
+                    session.onLogout.append { [purchases, notifications] in
+                        // Регистрация устройства удаляется, пока сессия ещё действует
+                        await PushCenter.shared.unregisterBeforeLogout()
+                        purchases.reset()
+                        notifications.reset()
                     }
+                    await assetsStore.loadAssets()
                 }
                 .preferredColorScheme(
                     AppTheme(rawValue: appThemeRaw)?.colorScheme
                 )
-                .onAppear {
-                    NotificationService.shared.requestPermission()
+                // Ссылка возврата из кошелька — в том числе при холодном старте
+                // Universal Link приходит как веб-активность — тем же разбором
+                .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { activity in
+                    if let url = activity.webpageURL, let link = PurchaseReturnLinks.parse(url) {
+                        purchases.pendingReturn = link
+                    }
                 }
                 .onOpenURL { url in
-                    // Возврат из кошелька: hoazinplatform://payment/done?order_id=&tx=
-                    handlePaymentCallback(url)
+                    if let link = PurchaseReturnLinks.parse(url) {
+                        purchases.pendingReturn = link
+                    }
+                }
+                .onChange(of: session.isAuthenticated, initial: true) { _, authenticated in
+                    if authenticated { PushCenter.shared.registerAfterLogin() }
+                }
+                .sheet(item: $push.pending) { target in
+                    PushTargetSheet(target: target)
+                        .environmentObject(session)
+                        .environmentObject(purchases)
+                        .environmentObject(notifications)
+                        .environmentObject(assetsStore)
+                        .environment(\.locale, localeFromStorage())
+                }
+                .sheet(item: returnLinkBinding) { item in
+                    ReturnLinkSheet(link: item.link)
+                        .environmentObject(session)
+                        .environmentObject(purchases)
+                        .environmentObject(notifications)
+                        .environment(\.locale, localeFromStorage())
                 }
         }
     }
-    
-    /// Кошелёк возвращает чек-сумму после перевода — кладём её в буфер,
-    /// чтобы её осталось только вставить в поле подтверждения оплаты.
-    private func handlePaymentCallback(_ url: URL) {
-        guard
-            url.scheme?.lowercased() == "hoazinplatform",
-            url.host?.lowercased() == "payment",
-            let components = URLComponents(url: url, resolvingAgainstBaseURL: false),
-            let items = components.queryItems
-        else { return }
 
-        let values = Dictionary(
-            uniqueKeysWithValues: items.compactMap { item -> (String, String)? in
-                guard let value = item.value else { return nil }
-                return (item.name.lowercased(), value)
-            }
+    private var returnLinkBinding: Binding<ReturnLinkItem?> {
+        Binding(
+            get: { purchases.pendingReturn.map(ReturnLinkItem.init) },
+            set: { if $0 == nil { purchases.pendingReturn = nil } }
         )
-
-        // Хеш принимаем только в ожидаемом формате
-        if let tx = values["tx"], TransactionHash.isValid(tx) {
-            UIPasteboard.general.string = TransactionHash.normalize(tx)
-            toastManager.showSuccess("Чек-сумма из кошелька скопирована")
-        }
     }
 
     private func localeFromStorage() -> Locale {
@@ -85,6 +105,56 @@ struct Crypto_PlatformApp: App {
             return Locale(identifier: "en")
         default:
             return .current
+        }
+    }
+}
+
+struct ReturnLinkItem: Identifiable {
+    let link: PurchaseReturnLinks.Link
+    var id: String { "\(link.requestId)|\(link.txHash ?? "")" }
+}
+
+/// Заявка, на которую вернул кошелёк. Без сессии сначала вход, затем заявка.
+struct ReturnLinkSheet: View {
+    @EnvironmentObject var session: UserSession
+    let link: PurchaseReturnLinks.Link
+
+    var body: some View {
+        NavigationStack {
+            if session.isAuthenticated {
+                PurchaseRequestView(requestId: link.requestId, returnedTxHash: link.txHash)
+            } else {
+                AuthView()
+            }
+        }
+    }
+}
+
+/// Экран из push. Без сессии сначала вход, затем цель; уведомление отмечается прочитанным.
+struct PushTargetSheet: View {
+    @EnvironmentObject var session: UserSession
+    @EnvironmentObject var notifications: NotificationsStore
+    let target: PushTarget
+
+    var body: some View {
+        NavigationStack {
+            if session.isAuthenticated {
+                Group {
+                    switch target {
+                    case .order(let id): OrderDetailsView(orderId: id)
+                    case .purchase(let id): PurchaseRequestView(requestId: id)
+                    case .feed: NotificationsView()
+                    }
+                }
+                .task {
+                    if let id = PushCenter.shared.pendingNotificationId {
+                        PushCenter.shared.pendingNotificationId = nil
+                        await notifications.markRead(id: id)
+                    }
+                }
+            } else {
+                AuthView()
+            }
         }
     }
 }

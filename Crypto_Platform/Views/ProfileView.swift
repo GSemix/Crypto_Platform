@@ -39,6 +39,10 @@ struct ProfileView: View {
                             ) {
                                 AccountView()
                             }
+                            HairlineDivider()
+                            NavigationRow(title: "Уведомления") {
+                                NotificationsView()
+                            }
                         } else {
                             NavigationRow(title: "Вход / Регистрация") {
                                 AuthView()
@@ -73,29 +77,9 @@ struct ProfileView: View {
                     }
                 }
 
-                VStack(alignment: .leading, spacing: Spacing.s) {
-                    SectionHeader("Тест")
-
-                    DataGroup {
-                        Button {
-                            NotificationService.shared.sendTestNotification()
-                        } label: {
-                            HStack {
-                                Text("Push-уведомление")
-                                    .font(.subheadline)
-                                    .foregroundStyle(Palette.primaryText)
-                                Spacer()
-                            }
-                            .padding(.vertical, Spacing.s + 2)
-                            .contentShape(Rectangle())
-                        }
-                        .buttonStyle(.plain)
-                    }
-                }
-
                 if session.isAuthenticated {
                     Button("Выйти", role: .destructive) {
-                        session.logout()
+                        Task { await session.logout() }
                     }
                     .buttonStyle(.secondaryOutline)
                 }

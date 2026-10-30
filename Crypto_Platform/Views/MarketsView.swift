@@ -32,6 +32,8 @@ struct MarketsView: View {
                 )
             } else {
                 ScrollView {
+                    VStack(spacing: Spacing.m) {
+                    CatalogOfflineNotice()
                     DataGroup {
                         ForEach(Array(filtered.enumerated()), id: \.element.id) { index, stock in
                             if index > 0 { HairlineDivider() }
@@ -49,6 +51,7 @@ struct MarketsView: View {
                             }
                             .buttonStyle(.plain)
                         }
+                    }
                     }
                     .padding(Spacing.m)
                 }

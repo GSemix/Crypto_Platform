@@ -5,10 +5,10 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
-			<key>CFBundleURLName</key>
-			<string>super-man.Crypto-Platform.payment</string>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>super-man.Crypto-Platform.payment</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>hoazinplatform</string>
@@ -18,8 +18,10 @@
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>hoazinwallet</string>
-		<string>tronlink</string>
-		<string>trust</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
 	</array>
 </dict>
 </plist>
